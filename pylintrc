@@ -111,6 +111,7 @@ disable =
 	W0235,
 	W0403,
 	W0511,
+	W0621,
 	W0622,
 	W0703,
 	W1202,
@@ -366,3 +367,4 @@ ignore-comments=yes
 
 # Ignore docstrings when computing similarities.
 ignore-docstrings=yes
+
