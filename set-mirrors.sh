@@ -45,6 +45,14 @@ if [ $? == 0 ]; then
     npm config set registry https://registry.npm.taobao.org
 fi
 
+# --------------------------------
+# yarn
+# --------------------------------
+command -v yarn > /dev/null
+if [ $? == 0 ]; then
+    echo "for yarn"
+    yarn config set registry https://registry.npm.taobao.org
+fi
 
 # --------------------------------
 # docker
