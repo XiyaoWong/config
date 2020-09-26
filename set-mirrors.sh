@@ -43,5 +43,16 @@ if [ $? == 0 ]; then
 fi
 
 # --------------------------------
+# ruby(gem)
+# --------------------------------
+command -v gem > /dev/null
+if [ $? == 0 ]; then
+    echo "for ruby(gem)"
+    gem sources --remove https://rubygems.org/
+    gem sources -a https://mirrors.aliyun.com/rubygems/
+    echo "=========================="
+fi
+
+# --------------------------------
 # docker
 # --------------------------------
